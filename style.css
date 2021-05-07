@@ -89,6 +89,20 @@ img{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.publication-container{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.publication-container > h2{
+    color:#a1a1a1;
+}
+
+.publications li{
+    text-align:justify;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
 
 @media(min-width: 920px){
     .social-container{
