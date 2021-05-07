@@ -1,3 +1,2 @@
-# CV-in-HTML
 Tasfik's CV in HTML
-Live @ https://tasfik007.netlify.app/
+# Live @ https://tasfik007.netlify.app/
