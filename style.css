@@ -73,6 +73,7 @@ a:hover{
 }
 .intro-container>img{
     max-width: 150px;
+    border-radius: 50%;
     padding: 15px 15px;
     flex:1;
 }
