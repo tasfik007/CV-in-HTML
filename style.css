@@ -129,6 +129,7 @@ a:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+
 .projects{
     padding-right:50px;
 }
@@ -157,17 +158,18 @@ a:hover{
 }
 
 
+
 @media(min-width: 920px){
-    #project-desc{
-        display: flex;
+    .projects div{
+        display: none;
         flex-wrap: wrap;
         justify-content:space-between;
         align-items: center;
     }
-    #project-desc img{
+    .projects div img{
         flex:1;
     }
-    #project-desc p{
+    .projects p{
         flex:1;
         text-align: justify;
     }
