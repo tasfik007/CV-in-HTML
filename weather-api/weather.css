@@ -1,3 +1,8 @@
+#weather:hover{
+    cursor:pointer;
+    color:#8fbc8f;
+}
+
 #toast {
     visibility: hidden;
     min-width: 250px;
