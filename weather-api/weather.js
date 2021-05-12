@@ -1,6 +1,6 @@
 //const fetch = require('node-fetch')
 
-var url = new URL('http://api.openweathermap.org/data/2.5/weather');
+var url = new URL('https://api.openweathermap.org/data/2.5/weather');
 var params = {
     q: 'dinajpur',
     appid: '22b2fed657cfc2c421b2475e571a24b9'
