@@ -1,3 +1,5 @@
+//const fetch = require('node-fetch')
+
 var url = new URL('http://api.openweathermap.org/data/2.5/weather');
 var params = {
     q: 'dinajpur',
@@ -38,7 +40,7 @@ async function showWeatherData() {
     var raw_data = await fetch(url);
     var data = await raw_data.json();
     var weather = fetchWeatherData(data);
-    var x = document.getElementById("snackbar");
+    var x = document.getElementById("toast");
     x.innerHTML = weatherReport(weather);
     x.className = "show";
     setTimeout(() => { x.className = x.className.replace("show", ""); }, 3000);
