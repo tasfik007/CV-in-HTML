@@ -13,7 +13,10 @@ $(document).ready(function () {
             if (revealed[i]) {
                 $(childClass).slideUp("slow");
             }
-            else $(childClass).slideDown("slow");
+            else {
+                $(childClass).slideDown("slow");
+            }
+            $("#logo" + i).toggleClass('fa-plus fa-minus');
             revealed[i] = !revealed[i];
         });
     }

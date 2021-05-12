@@ -133,6 +133,13 @@ a:hover{
 .projects{
     padding-right:50px;
 }
+
+.project-header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
 .projects  li{
     max-width: 800px;
     padding: 2px 16px;
