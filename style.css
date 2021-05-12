@@ -64,7 +64,9 @@ a:hover{
     font-weight:normal;
     text-align: center;
 }
-
+#weather:hover{
+    cursor:pointer;
+}
 .intro-container{
     display:flex;
     justify-content: center;

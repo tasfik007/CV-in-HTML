@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Custom CSS Styling-->
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="weather-api/weather.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="App.js"></script>
+
 </head>
 
 <body>
+    <div id="snackbar">Toast Text will appear here</div>
 
     <div class="cv">
         <div class="left"></div>
@@ -33,6 +36,11 @@
             <!-- <Social> -->
             <nav class="social-section">
                 <ul class="social-container">
+                    <li onclick="showWeatherData()" id="weather">
+                        <i class="fa fa-map-marker"></i>
+                        <span>Munshipara, Dinajpur</span>
+                        </a>
+                    </li>
                     <li>
                         <i class="fa fa-linkedin"></i>
                         <a href="http://linkedin.com/in/tasfik007" target="_blank">
@@ -351,7 +359,7 @@
     </div>
 
 
-
+    <script src="weather-api/weather.js"></script>
 </body>
 
 </html>
