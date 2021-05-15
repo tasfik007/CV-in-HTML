@@ -1,5 +1,3 @@
-//const fetch = require('node-fetch')
-
 var url = new URL('https://api.openweathermap.org/data/2.5/weather');
 var params = {
     q: 'dinajpur',
