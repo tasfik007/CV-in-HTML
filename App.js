@@ -6,4 +6,11 @@ $(document).ready(function () {
             $("#logo" + i).toggleClass('fa-plus fa-minus');
         });
     }
+    const TOTAL_ACADEMICS = $(".academics").children().length;
+    for (let i = 1; i <= TOTAL_ACADEMICS; i++) {
+        $("#academic-" + i).click(function () {
+            $("#academic-" + i + "-detail").toggle(300);
+            $("#academic-" + i + "-logo").toggleClass('fa-angle-down fa-angle-up');
+        });
+    }
 });

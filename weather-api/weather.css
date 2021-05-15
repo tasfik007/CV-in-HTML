@@ -1,7 +1,7 @@
 
 #toast {
     visibility: hidden;
-    min-width: 250px;
+    min-width: 350px;
     margin-left: -125px;
     text-align: center;
     border-radius: 5px;
@@ -9,14 +9,14 @@
     position: fixed;
     z-index: 1;
     left: 50%;
-    left: 120px;
+    left: 125px;
     font-size: 17px;
 }
 
 #toast.show {
     visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+    animation: fadein 0.5s, fadeout 0.5s 4.5s;
 }
 
 @-webkit-keyframes fadein {
@@ -26,7 +26,7 @@
     }
 
     to {
-        left: 120px;
+        left: 125px;
         opacity: 1;
     }
 }
@@ -38,14 +38,14 @@
     }
 
     to {
-        left: 120px;
+        left: 125px;
         opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeout {
     from {
-        left: 120px;
+        left: 125px;
         opacity: 1;
     }
 
@@ -57,7 +57,7 @@
 
 @keyframes fadeout {
     from {
-        left: 120px;
+        left: 125px;
         opacity: 1;
     }
 
