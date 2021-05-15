@@ -42,6 +42,7 @@ async function showWeatherData() {
     var weather = fetchWeatherData(data);
     var x = document.getElementById("toast");
     x.innerHTML = weatherReport(weather);
-    x.className = "show";
-    setTimeout(() => { x.className = x.className.replace("show", ""); }, 3000);
+    let prev_class = x.className;
+    x.className += " show";
+    setTimeout(() => { x.className = x.className.replace(prev_class + " show", prev_class); }, 3000);
 }

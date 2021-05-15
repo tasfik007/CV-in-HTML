@@ -16,54 +16,58 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="App.js"></script>
 
+
 </head>
 
-<body>
-    <div id="toast">Toast Text will appear here</div>
+<body class="bg-yellow-100">
+    <div id="toast" class="bg-green-100 font-bold shadow-md">Toast Text will appear here</div>
 
     <div class="flex my-14">
         <div class="w-1/4"></div>
         <div class="mid bg-white py-12 px-14 rounded-lg shadow-2xl">
             <!-- <Introduction> -->
             <header>
-                <div class="intro-container flex justify-center items-center flex-wrap">
-                    <h1 class="flex-1 text-center">Tasfik Rahman</h1>
-                    <img class="flex-1 rounded-full p-3" src="res/40.jpg" alt="tasfik-image" style="max-width: 150px;">
-                    <div class="space"></div>
+                <div class="intro-container  flex justify-center items-center flex-wrap">
+                    <h1 class="text-center text-8xl flex-1 ">Tasfik Rahman</h1>
+                    <img class="max-h-60 flex-1 rounded-full p-3 lg:mr-16 md:mr-0" src="res/40.jpg" alt="tasfik-image"
+                        style="max-width: 150px;">
                 </div>
             </header>
             <!-- </Introduction> -->
 
 
             <!-- <Social> -->
-            <nav>
+            <nav class="mb-2">
                 <ul class="flex flex-wrap justify-around px-5">
                     <li onclick="showWeatherData()" class="pl-1.5 text-2xl">
                         <i class="fa fa-map-marker"></i>
-                        <span id="weather" title="See Current Weather"><u>Munshipara, Dinajpur</u></span>
-                        </a>
+                        <span id="weather" class="hover:text-green-400 cursor-pointer"
+                            title="See Current Weather"><u>Munshipara,
+                                Dinajpur</u></span>
                     </li>
                     <li class="pl-1.5 text-2xl">
                         <i class="fa fa-linkedin"></i>
-                        <a href="http://linkedin.com/in/tasfik007" target="_blank">
+                        <a class="text-black hover:text-green-400" href="http://linkedin.com/in/tasfik007"
+                            target="_blank">
                             <u>Linkedin</u>
                         </a>
                     </li>
                     <li class="pl-1.5 text-2xl">
                         <i class="fa fa-github"></i>
-                        <a href="http://github.com/in/tasfik007" target="_blank">
+                        <a class="text-black hover:text-green-400"" href=" http://github.com/in/tasfik007"
+                            target="_blank">
                             <u>Github</u>
                         </a>
                     </li>
                     <li class="pl-1.5 text-2xl">
                         <i class="fa fa-envelope"></i>
-                        <a href="mailto:tasfikrahman007@gmail.com">
+                        <a class="text-black hover:text-green-400"" href=" mailto:tasfikrahman007@gmail.com">
                             <u>Email</u>
                         </a>
                     </li>
                     <li class="pl-1.5 text-2xl">
                         <i class="fa fa-globe"></i>
-                        <a href="http://tasfik007.github.io">
+                        <a class="text-black hover:text-green-400"" href=" http://tasfik007.github.io">
                             <u>Website</u>
                         </a>
                     </li>
@@ -72,36 +76,36 @@
             <!-- </Social> -->
             <hr>
 
-            <div class="main-page flex pl-4">
-                <div class="col-1">
+            <div class="main-page flex pl-4 md:flex flex-wrap pl-4">
+                <div class="col-1 flex-2">
                     <!-- <Academics> -->
-                    <section class="academic-section">
-                        <div class="academic-container">
-                            <h2>EDUCATION</h2>
+                    <section>
+                        <div>
+                            <h2 class="mt-2 text-gray-400 text-3xl">EDUCATION</h2>
                             <ul class="academics">
                                 <li>
-                                    <h3>B.Sc. in Computer Science and Engineering</h3>
-                                    <small>2017 - 2021</small>
+                                    <h3 class="font-bold">B.Sc. in Computer Science and Engineering</h3>
+                                    <small class="text-gray-400">2017 - 2021</small>
                                     <p>Military Institute of Science and Technology
                                         <br>Mirpur DOHS, Dhaka-1216
                                     </p>
-                                    <small>CGPA: 3.61 (Out of 4.0)</small>
+                                    <small class="text-gray-400">CGPA: 3.61 (Out of 4.0)</small>
                                 </li>
                                 <li>
-                                    <h3>Higher Secondary Certificate (H.S.C.)</h3>
-                                    <small>2014 - 2016</small>
+                                    <h3 class="font-bold">Higher Secondary Certificate (H.S.C.)</h3>
+                                    <small class="text-gray-400">2014 - 2016</small>
                                     <p>Dinajpur Goverment College
                                         <br>Dinajpur Sadar-5200
                                     </p>
-                                    <small>CGPA: 5.00 (Out of 5.0)</small>
+                                    <small class="text-gray-400">CGPA: 5.00 (Out of 5.0)</small>
                                 </li>
                                 <li>
-                                    <h3>Secondary School Certificate (S.S.C.)</h3>
-                                    <small>2012 - 2014</small>
+                                    <h3 class="font-bold">Secondary School Certificate (S.S.C.)</h3>
+                                    <small class="text-gray-400">2012 - 2014</small>
                                     <p>Dinajpur Zilla School
                                         <br>Dinajpur Sadar-5200
                                     </p>
-                                    <small>CGPA: 5.00 (Out of 5.0)</small>
+                                    <small class="text-gray-400">CGPA: 5.00 (Out of 5.0)</small>
                                 </li>
                             </ul>
                         </div>
@@ -109,9 +113,9 @@
                     <!-- </Academics> -->
 
                     <!--<Online Profiles>-->
-                    <section class="profile-section">
-                        <div class="profile-container">
-                            <h2>ONLINE PROFILES</h2>
+                    <section>
+                        <div>
+                            <h2 class="mt-2 text-gray-400 text-3xl">ONLINE PROFILES</h2>
                             <ul class="profiles">
                                 <li><strong>1750+</strong> rating in <strong>Codechef</strong></li>
                                 <li><strong>120+</strong> problems solved on <strong>Leetcode</strong></li>
@@ -125,10 +129,10 @@
                     <!--</Online Profiles>-->
 
                     <!--<Technical Skills>-->
-                    <section class="skill">
-                        <div class="skill-container">
-                            <h2>TECHNICAL SKILLS</h2>
-                            <h3>PROGRAMING</h3>
+                    <section>
+                        <div>
+                            <h2 class="mt-2 text-gray-400 text-3xl">TECHNICAL SKILLS</h2>
+                            <h3 class="font-bold">PROGRAMING</h3>
                             <ul class="skills">
                                 <li><strong>Experienced:</strong> C, C++, Java</li>
                                 <li><strong>Intermediate:</strong> Javascript, NodeJS, Python, Matlab</li>
@@ -139,11 +143,11 @@
                     <!--</Technical Skills>-->
 
                     <!--<Course Works>-->
-                    <section class="course-section">
-                        <div class="course-container">
-                            <h2>COURSEWORKS</h2>
-                            <h3>UNDERGRADUATE</h3>
-                            <ul class="skills">
+                    <section>
+                        <div>
+                            <h2 class="mt-2 text-gray-400 text-3xl">COURSEWORKS</h2>
+                            <h3 class="font-bold">UNDERGRADUATE</h3>
+                            <ul>
                                 <li>Data Structures & Algorithms</li>
                                 <li>Discrete Mathematics</li>
                                 <li>Pattern Recognition</li>
@@ -162,29 +166,37 @@
 
 
                     <!--<Achievements>-->
-                    <section class="achievement-section">
-                        <div class="achievement-container">
-                            <h2>ACHIEVEMENTS</h2>
-                            <ul class="achievements">
-                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2021 | Top 100/1300+ teams |
+                    <section>
+                        <div>
+                            <h2 class="mt-2 text-gray-400 text-3xl">ACHIEVEMENTS</h2>
+                            <ul>
+                                <li class="duration-300 hover:shadow-xl shadow-md mb-3 text-justify py-1 px-4 w-10/12">•
+                                    2021 | Top
+                                    100/1300+ teams |
                                     ICPC Dhaka Regional 2020 Preli [MIST_Daredevils]
                                 </li>
-                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2020 | 3rd Globally/2729 |
+                                <li class="duration-300 hover:shadow-xl shadow-md mb-3 text-justify py-1 px-4 w-10/12">•
+                                    2020 | 3rd Globally/2729 |
                                     Facebook Hackathon 2020
                                 </li>
-                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2020 | Globally 336th |
+                                <li class="duration-300 hover:shadow-xl shadow-md mb-3 text-justify py-1 px-4 w-10/12">•
+                                    2020 | Globally 336th |
                                     November CookOff, CodeChef
                                 </li>
-                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2020 | 4PRs Accepted |
+                                <li class="duration-300 hover:shadow-xl shadow-md mb-3 text-justify py-1 px-4 w-10/12">•
+                                    2020 | 4PRs Accepted |
                                     Hacktoberfest 2020
                                 </li>
-                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2020 | Semi-finalist |
+                                <li class="duration-300 hover:shadow-xl shadow-md mb-3 text-justify py-1 px-4 w-10/12">•
+                                    2020 | Semi-finalist |
                                     Microsoft AI Gaming Code A Bot, Bangladesh
                                 </li>
-                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2019 | Top 10 |
+                                <li class="duration-300 hover:shadow-xl shadow-md mb-3 text-justify py-1 px-4 w-10/12">•
+                                    2019 | Top 10 |
                                     Code Samurai Hackathon 2019
                                 </li>
-                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2018 | 3rd place |
+                                <li class="duration-300 hover:shadow-xl shadow-md mb-3 text-justify py-1 px-4 w-10/12">•
+                                    2018 | 3rd place |
                                     MIST, Intra University Programming Contest 2018
                                 </li>
                             </ul>
@@ -193,9 +205,9 @@
                     <!--</Achievements>-->
 
                     <!--<Soft Skills>-->
-                    <section class="soft-section">
-                        <div class="soft-container">
-                            <h2>SOFT SKILLS</h2>
+                    <section>
+                        <div>
+                            <h2 class="mt-2 text-gray-400 text-3xl">SOFT SKILLS</h2>
                             <ul class="skills">
                                 <li>• Team Work</li>
                                 <li>• Leadership</li>
@@ -209,15 +221,16 @@
 
 
                 </div>
-                <div class="col-2 mr-14">
+                <div class="col-2 flex-3 mr-14 md:ml-0">
                     <!--<Experience>-->
-                    <section class="experience-section">
-                        <div class="experience-container">
-                            <h2>EXPERIENCE</h2>
-                            <ul class="experiences">
+                    <section>
+                        <div>
+                            <h2 class="mt-2 text-gray-400 text-3xl">EXPERIENCE</h2>
+                            <ul>
                                 <li>
-                                    <h3>MIST COMPUTER CLUB | <small>Mentor</small></h3>
-                                    <small class="desc">March 2019 - April 2021 | Mirpur, Dhaka</small>
+                                    <h3 class="font-bold">MIST COMPUTER CLUB | <small
+                                            class="text-gray-400">Mentor</small></h3>
+                                    <small class="text-gray-400 desc">March 2019 - April 2021 | Mirpur, Dhaka</small>
                                     <p>
                                         • Took programming Classes on C, C++ over 100+ students. <br>
                                         • Problem setter of MIST CODEWAR 2020 arranged by MCC. <br>
@@ -226,8 +239,10 @@
                                     </p>
                                 </li>
                                 <li>
-                                    <h3>TRUST BANK LTD. | <small>Database Intern</small></h3>
-                                    <small class="desc">Dec 2019 - Jan 2020 | Shadhinota Tower, Dhaka</small>
+                                    <h3 class="font-bold">TRUST BANK LTD. | <small class="text-gray-400">Database
+                                            Intern</small></h3>
+                                    <small class="text-gray-400 desc">Dec 2019 - Jan 2020 | Shadhinota Tower,
+                                        Dhaka</small>
                                     <p>
                                         • Did my internship in Database Management System of Trust Bank IT Division
                                         &nbsp;&nbsp; underthe supervision of Mir Mezbah Uddin, Senior Database
@@ -242,16 +257,17 @@
                     <!-- <Projects> -->
                     <section>
                         <div>
-                            <h2>PROJECTS</h2>
+                            <h2 class="mt-2 text-gray-400 text-3xl">PROJECTS</h2>
                             <ul class="projects">
-                                <li class="project1 py-1 px-4 mb-3">
+                                <li
+                                    class="project1 py-1 px-4 mb-3 max-w-screen-md shadow-md hover:shadow-xl duration-300 cursor-pointer">
                                     <span class="flex justify-between items-center">
-                                        <h3>AUTHAPP WITH PROTECTED ROUTES</h3>
+                                        <h3 class="font-bold">AUTHAPP WITH PROTECTED ROUTES</h3>
                                         <i class="fa fa-plus" id="logo1"></i>
                                     </span>
-                                    <small>Code | Live</small>
-                                    <div id="project-desc1">
-                                        <img src="res/dsi-authapp.png" alt="DSiAuthApp">
+                                    <small class="text-gray-400">Code | Live</small>
+                                    <div id="project-desc1" class="hidden">
+                                        <img class="max-h-60" src="res/dsi-authapp.png" alt="DSiAuthApp">
                                         <p>
                                             Backend developed with Express framework, MongoDB as Database and
                                             frontend in ReactJS. Passwords encrypted using bcrypt and certain routes
@@ -260,14 +276,15 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="project2 py-1 px-4 mb-3">
+                                <li
+                                    class="project2 py-1 px-4 mb-3 max-w-screen-md shadow-md hover:shadow-xl duration-300 cursor-pointer">
                                     <span class="flex justify-between items-center">
-                                        <h3>COVID19 PREDICTION USING CNN</h3>
+                                        <h3 class="font-bold">COVID19 PREDICTION USING CNN</h3>
                                         <i class="fa fa-plus" id="logo2"></i>
                                     </span>
-                                    <small>Code | Live</small>
-                                    <div id="project-desc2">
-                                        <img src="res/covid1.png" alt="covid19">
+                                    <small class="text-gray-400">Code | Live</small>
+                                    <div id="project-desc2" class="hidden">
+                                        <img class="max-h-60" src="res/covid1.png" alt="covid19">
                                         <p>
                                             Covid19 +ve data fetched from this repo & -ve data from this kaggle dataset.
                                             Here is my final merged dataset. The network consisted of 5 CNN layers, 4
@@ -278,14 +295,15 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="project3 py-1 px-4 mb-3">
+                                <li
+                                    class="project3 py-1 px-4 mb-3 max-w-screen-md shadow-md hover:shadow-xl duration-300 cursor-pointer">
                                     <span class="flex justify-between items-center">
-                                        <h3>MATERNAL HEALTH AND CHILD SUPPORT SYSTEM</h3>
+                                        <h3 class="font-bold">MATERNAL HEALTH AND CHILD SUPPORT SYSTEM</h3>
                                         <i class="fa fa-plus" id="logo3"></i>
                                     </span>
-                                    <small>Code | Live</small>
-                                    <div id="project-desc3">
-                                        <img src="res/health1.png" alt="Health">
+                                    <small class="text-gray-400">Code | Live</small>
+                                    <div id="project-desc3" class="hidden">
+                                        <img class="max-h-60" src="res/health1.png" alt="Health">
                                         <p>
                                             Collected ground data from 30+ families. This is a system forrecording
                                             maternal health and providing them health advice during their perinatal
@@ -294,28 +312,30 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="project4 py-1 px-4 mb-3">
-                                    <span class="flex justify-between items-center
-                                        <h3>BANK TRANSACTION MINIMIZATION VISUALIZER</h3>
+                                <li
+                                    class="project4 py-1 px-4 mb-3 max-w-screen-md shadow-md hover:shadow-xl duration-300 cursor-pointer">
+                                    <span class="flex justify-between items-center">
+                                        <h3 class="font-bold">BANK TRANSACTION MINIMIZATION VISUALIZER</h3>
                                         <i class=" fa fa-plus" id="logo4"></i>
                                     </span>
-                                    <small>Code | Live</small>
-                                    <div id="project-desc4">
-                                        <img src="res/bank1.png" alt="transactionApp">
+                                    <small class="text-gray-400">Code | Live</small>
+                                    <div id="project-desc4" class="hidden">
+                                        <img class="max-h-60" src="res/bank1.png" alt="transactionApp">
                                         <p>
                                             Implemented with Split Wise Algorithm, T = O(nlogn) & the was UI made with
                                             HTML5, CSS3, JS.
                                         </p>
                                     </div>
                                 </li>
-                                <li class="project5 py-1 px-4 mb-3">
+                                <li
+                                    class="project5 py-1 px-4 mb-3 max-w-screen-md shadow-md hover:shadow-xl duration-300 cursor-pointer">
                                     <span class="flex justify-between items-centerr">
-                                        <h3>EL-DISINFECTO, UVC DISINFECTION ROBOT</h3>
+                                        <h3 class="font-bold">EL-DISINFECTO, UVC DISINFECTION ROBOT</h3>
                                         <i class="fa fa-plus" id="logo5"></i>
                                     </span>
-                                    <small>Code | Live</small>
-                                    <div id="project-desc5">
-                                        <img src="res/el1.jpg" alt="ElDisinfect">
+                                    <small class="text-gray-400">Code | Live</small>
+                                    <div id="project-desc5" class="hidden">
+                                        <img class="max-h-60" src="res/el1.jpg" alt="ElDisinfect">
                                         <p>
                                             Backend developed with Express framework, MongoDB as Database and
                                             frontend in ReactJS. Passwords encrypted using bcrypt and certain routes
@@ -324,14 +344,15 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="project6 py-1 px-4 mb-3">
+                                <li
+                                    class="project6 py-1 px-4 mb-3 max-w-screen-md shadow-md hover:shadow-xl duration-300 cursor-pointer">
                                     <span class="flex justify-between items-center">
-                                        <h3>SEE WHAT NASA SAW TODAY</h3>
+                                        <h3 class="font-bold">SEE WHAT NASA SAW TODAY</h3>
                                         <i class="fa fa-plus" id="logo6"></i>
                                     </span>
-                                    <small>Code | Live</small>
-                                    <div id="project-desc6">
-                                        <img src="res/nasa1.png" alt="NasaApp">
+                                    <small class="text-gray-400">Code | Live</small>
+                                    <div id="project-desc6" class="hidden">
+                                        <img class="max-h-60" src="res/nasa1.png" alt="NasaApp">
                                         <p>
                                             Pictures Fetched from NASA APOD API
                                             The UI implemented with React, React Router, CSS3, JS
@@ -349,7 +370,7 @@
 
             <footer>
                 <div class="px-5">
-                    <h2>PUBLICATIONS</h2>
+                    <h2 class="mt-2 text-gray-400 text-3xl">PUBLICATIONS</h2>
                     <ul>
                         <li class="text-justify mb-7">
                             [1] T. Rahman, A. Anjum, R. Rahman, and R. R. Khan. A Proposed Integrated System Towards
