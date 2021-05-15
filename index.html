@@ -8,6 +8,8 @@
     <title>Tasfik Rahman</title>
     <!--Fontawesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Tailwind CSS-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <!--Custom CSS Styling-->
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="weather-api/weather.css" type="text/css">
@@ -19,14 +21,14 @@
 <body>
     <div id="toast">Toast Text will appear here</div>
 
-    <div class="cv">
-        <div class="left"></div>
-        <div class="mid">
+    <div class="flex my-14">
+        <div class="w-1/4"></div>
+        <div class="mid bg-white py-12 px-14 rounded-lg shadow-2xl">
             <!-- <Introduction> -->
-            <header class="intro-section">
-                <div class="intro-container">
-                    <h1>Tasfik Rahman</h1>
-                    <img src="res/40.jpg" alt="tasfik-image">
+            <header>
+                <div class="intro-container flex justify-center items-center flex-wrap">
+                    <h1 class="flex-1 text-center">Tasfik Rahman</h1>
+                    <img class="flex-1 rounded-full p-3" src="res/40.jpg" alt="tasfik-image" style="max-width: 150px;">
                     <div class="space"></div>
                 </div>
             </header>
@@ -34,32 +36,32 @@
 
 
             <!-- <Social> -->
-            <nav class="social-section">
-                <ul class="social-container">
-                    <li onclick="showWeatherData()">
+            <nav>
+                <ul class="flex flex-wrap justify-around px-5">
+                    <li onclick="showWeatherData()" class="pl-1.5 text-2xl">
                         <i class="fa fa-map-marker"></i>
                         <span id="weather" title="See Current Weather"><u>Munshipara, Dinajpur</u></span>
                         </a>
                     </li>
-                    <li>
+                    <li class="pl-1.5 text-2xl">
                         <i class="fa fa-linkedin"></i>
                         <a href="http://linkedin.com/in/tasfik007" target="_blank">
                             <u>Linkedin</u>
                         </a>
                     </li>
-                    <li>
+                    <li class="pl-1.5 text-2xl">
                         <i class="fa fa-github"></i>
                         <a href="http://github.com/in/tasfik007" target="_blank">
                             <u>Github</u>
                         </a>
                     </li>
-                    <li>
+                    <li class="pl-1.5 text-2xl">
                         <i class="fa fa-envelope"></i>
                         <a href="mailto:tasfikrahman007@gmail.com">
                             <u>Email</u>
                         </a>
                     </li>
-                    <li>
+                    <li class="pl-1.5 text-2xl">
                         <i class="fa fa-globe"></i>
                         <a href="http://tasfik007.github.io">
                             <u>Website</u>
@@ -70,7 +72,7 @@
             <!-- </Social> -->
             <hr>
 
-            <div class="main-page">
+            <div class="main-page flex pl-4">
                 <div class="col-1">
                     <!-- <Academics> -->
                     <section class="academic-section">
@@ -164,25 +166,25 @@
                         <div class="achievement-container">
                             <h2>ACHIEVEMENTS</h2>
                             <ul class="achievements">
-                                <li>• 2021 | Top 100/1300+ teams |
+                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2021 | Top 100/1300+ teams |
                                     ICPC Dhaka Regional 2020 Preli [MIST_Daredevils]
                                 </li>
-                                <li>• 2020 | 3rd Globally/2729 |
+                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2020 | 3rd Globally/2729 |
                                     Facebook Hackathon 2020
                                 </li>
-                                <li>• 2020 | Globally 336th |
+                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2020 | Globally 336th |
                                     November CookOff, CodeChef
                                 </li>
-                                <li>• 2020 | 4PRs Accepted |
+                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2020 | 4PRs Accepted |
                                     Hacktoberfest 2020
                                 </li>
-                                <li>• 2020 | Semi-finalist |
+                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2020 | Semi-finalist |
                                     Microsoft AI Gaming Code A Bot, Bangladesh
                                 </li>
-                                <li>• 2019 | Top 10 |
+                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2019 | Top 10 |
                                     Code Samurai Hackathon 2019
                                 </li>
-                                <li>• 2018 | 3rd place |
+                                <li class="mb-3 text-justify py-1 px-4 w-10/12">• 2018 | 3rd place |
                                     MIST, Intra University Programming Contest 2018
                                 </li>
                             </ul>
@@ -207,7 +209,7 @@
 
 
                 </div>
-                <div class="col-2">
+                <div class="col-2 mr-14">
                     <!--<Experience>-->
                     <section class="experience-section">
                         <div class="experience-container">
@@ -228,7 +230,7 @@
                                     <small class="desc">Dec 2019 - Jan 2020 | Shadhinota Tower, Dhaka</small>
                                     <p>
                                         • Did my internship in Database Management System of Trust Bank IT Division
-                                        <br> &nbsp;&nbsp; underthe supervision of Mir Mezbah Uddin, Senior Database
+                                        &nbsp;&nbsp; underthe supervision of Mir Mezbah Uddin, Senior Database
                                         Administrator
                                     </p>
                                 </li>
@@ -238,12 +240,12 @@
                     <!--</Experience>-->
 
                     <!-- <Projects> -->
-                    <section class="project-section">
-                        <div class="project-container">
+                    <section>
+                        <div>
                             <h2>PROJECTS</h2>
                             <ul class="projects">
-                                <li class="project1">
-                                    <span class="project-header">
+                                <li class="project1 py-1 px-4 mb-3">
+                                    <span class="flex justify-between items-center">
                                         <h3>AUTHAPP WITH PROTECTED ROUTES</h3>
                                         <i class="fa fa-plus" id="logo1"></i>
                                     </span>
@@ -258,8 +260,8 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="project2">
-                                    <span class="project-header">
+                                <li class="project2 py-1 px-4 mb-3">
+                                    <span class="flex justify-between items-center">
                                         <h3>COVID19 PREDICTION USING CNN</h3>
                                         <i class="fa fa-plus" id="logo2"></i>
                                     </span>
@@ -276,8 +278,8 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="project3">
-                                    <span class="project-header">
+                                <li class="project3 py-1 px-4 mb-3">
+                                    <span class="flex justify-between items-center">
                                         <h3>MATERNAL HEALTH AND CHILD SUPPORT SYSTEM</h3>
                                         <i class="fa fa-plus" id="logo3"></i>
                                     </span>
@@ -292,10 +294,10 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="project4">
-                                    <span class="project-header">
+                                <li class="project4 py-1 px-4 mb-3">
+                                    <span class="flex justify-between items-center
                                         <h3>BANK TRANSACTION MINIMIZATION VISUALIZER</h3>
-                                        <i class="fa fa-plus" id="logo4"></i>
+                                        <i class=" fa fa-plus" id="logo4"></i>
                                     </span>
                                     <small>Code | Live</small>
                                     <div id="project-desc4">
@@ -306,8 +308,8 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="project5">
-                                    <span class="project-header">
+                                <li class="project5 py-1 px-4 mb-3">
+                                    <span class="flex justify-between items-centerr">
                                         <h3>EL-DISINFECTO, UVC DISINFECTION ROBOT</h3>
                                         <i class="fa fa-plus" id="logo5"></i>
                                     </span>
@@ -322,8 +324,8 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="project6">
-                                    <span class="project-header">
+                                <li class="project6 py-1 px-4 mb-3">
+                                    <span class="flex justify-between items-center">
                                         <h3>SEE WHAT NASA SAW TODAY</h3>
                                         <i class="fa fa-plus" id="logo6"></i>
                                     </span>
@@ -345,11 +347,11 @@
 
             <hr>
 
-            <footer class="publication-section">
-                <div class="publication-container">
+            <footer>
+                <div class="px-5">
                     <h2>PUBLICATIONS</h2>
-                    <ul class="publications">
-                        <li>
+                    <ul>
+                        <li class="text-justify mb-7">
                             [1] T. Rahman, A. Anjum, R. Rahman, and R. R. Khan. A Proposed Integrated System Towards
                             Digitizing
                             the
@@ -357,14 +359,14 @@
                             International WIE
                             Conference on Electrical and Computer Engineering (WIECON-ECE), pages 1–4. IEEE, 2019.
                         </li>
-                        <li>
+                        <li class="text-justify mb-7">
                             [2] Deep Convolutional Neural Network Based Biometric System Using Retinal Blood Vessel
                             Segmentation
                             and Feature Matching Technique. Here I have worked with retina fundus images to develop an
                             biometric
                             authentication system (*in proceedings)
                         </li>
-                        <li>
+                        <li class="text-justify mb-7">
                             [3] R. Mohoto, T. Rahman, A. Zaman, Mustaqim Abrar, Zobair Zenith, Abdul Wajed Rifat. IoT
                             Based
                             Autonomous Multipurpose Robot With AI Driven Decision Making Capabilities. (*in proceedings)
@@ -373,7 +375,7 @@
                 </div>
             </footer>
         </div>
-        <div class="right"></div>
+        <div class="w-1/4"></div>
     </div>
 
 
