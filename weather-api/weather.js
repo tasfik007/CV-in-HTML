@@ -14,7 +14,7 @@ function kToC(temprature) {
 function hPaToATM(pressure) {
     return (pressure * 0.000987).toFixed(2);
 }
-function weatherReport(weather) {
+function getWeatherReport(weather) {
     return `
                 Current Temprature: ${weather.temprature.current}&#176;C <br>
                 Feels Like: ${weather.temprature.feels_like}&#176;C <br>
@@ -22,7 +22,7 @@ function weatherReport(weather) {
                 Humidity: ${weather.humidity}%
             `
 }
-function fetchWeatherData(data) {
+function extractWeatherData(data) {
     return {
         description: data.weather[0].description,
         temprature: {
@@ -36,12 +36,12 @@ function fetchWeatherData(data) {
         wind: data.wind
     };
 }
-async function showWeatherData() {
+async function fetchWeatherData() {
     var raw_data = await fetch(url);
     var data = await raw_data.json();
-    var weather = fetchWeatherData(data);
+    var weather = extractWeatherData(data);
     var x = document.getElementById("toast");
-    x.innerHTML = weatherReport(weather);
+    x.innerHTML = getWeatherReport(weather);
     let prev_class = x.className;
     x.className += " show";
     setTimeout(() => { x.className = x.className.replace(prev_class + " show", prev_class); }, 3000);
