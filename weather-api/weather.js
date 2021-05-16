@@ -26,27 +26,25 @@ function getWeatherReport(weather) {
                 Humidity: ${weather.humidity}%
             `
 }
+function setWeatherReport(weatherData) {
+    let children = $("#toast > span");
+    for (let i = 0; i < children.length; i++) {
+        $("#" + children[i].id).text(weatherData[i]);
+    }
+}
 function extractWeatherData(data) {
-    return {
-        city: data.name,
-        description: data.weather[0].description,
-        temprature: {
-            current: kToC(data.main.temp),
-            max: kToC(data.main.temp_max),
-            min: kToC(data.main.temp_min),
-            feels_like: kToC(data.main.feels_like)
-        },
-        humidity: data.main.humidity,
-        pressure: hPaToATM(data.main.pressure),
-        wind: data.wind
-    };
+    return [data.name, kToC(data.main.temp), kToC(data.main.feels_like),
+    data.wind.speed, data.main.humidity];
 }
 async function fetchWeatherData() {
     var raw_data = await fetch(url);
     var data = await raw_data.json();
     var weather = extractWeatherData(data);
+    console.log(weather);
+
     var x = document.getElementById("toast");
-    x.innerHTML = getWeatherReport(weather);
+    setWeatherReport(weather);
+    //x.innerHTML = getWeatherReport(weather);
     let prev_class = x.className;
     x.className += " show";
     setTimeout(() => { x.className = x.className.replace(prev_class + " show", prev_class); }, 5000);
