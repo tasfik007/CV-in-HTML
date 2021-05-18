@@ -12,22 +12,21 @@ function hPaToATM(pressure) {
     return (pressure * 0.000987).toFixed(2);
 }
 
-function setWeatherReport(weatherData) {
-    let children = $("#toast > span");
-    for (let i = 0; i < children.length; i++) {
-        $("#" + children[i].id).text(weatherData[i]);
-    }
+function setWeatherReport({
+    name: city,
+    main: { temp: temp_cur, feels_like: temp_feels, humidity },
+    wind: { speed: wind_speed }
+}) {
+    $("#city").text(city); $("#temp-cur").text(temp_cur);
+    $("#temp-feel").text(temp_feels);
+    $("#wind").text(wind_speed); $("#hum").text(humidity);
 }
-function extractWeatherData(data) {
-    return [data.name, kToC(data.main.temp), kToC(data.main.feels_like),
-    data.wind.speed, data.main.humidity];
-}
+
 async function fetchWeatherData() {
     var raw_data = await fetch(url);
     var data = await raw_data.json();
-    var weather = extractWeatherData(data);
     var x = document.getElementById("toast");
-    setWeatherReport(weather);
+    setWeatherReport(data);
     let prev_class = x.className;
     x.className += " show";
     setTimeout(() => { x.className = x.className.replace(prev_class + " show", prev_class); }, 5000);
