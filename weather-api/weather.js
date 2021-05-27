@@ -17,8 +17,8 @@ function setWeatherReport({
     main: { temp: temp_cur, feels_like: temp_feels, humidity },
     wind: { speed: wind_speed }
 }) {
-    $("#city").text(city); $("#temp-cur").text(temp_cur);
-    $("#temp-feel").text(temp_feels);
+    $("#city").text(city); $("#temp-cur").text(kToC(temp_cur));
+    $("#temp-feel").text(kToC(temp_feels));
     $("#wind").text(wind_speed); $("#hum").text(humidity);
 }
 
